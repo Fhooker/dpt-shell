@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.luoye.dpt'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'de.upb.cs.swt:axml:2.1.1'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    compile group: 'net.lingala.zip4j', name: 'zip4j', version: '2.6.4'
+    compile group: 'org.bouncycastle', name: 'bcprov-ext-jdk16', version: '1.46'
+    compile fileTree(dir:'libs',include:['*.jar'])
+}
